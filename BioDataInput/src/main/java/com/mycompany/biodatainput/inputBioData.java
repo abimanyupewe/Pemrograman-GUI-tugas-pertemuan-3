@@ -245,9 +245,9 @@ public class inputBioData extends javax.swing.JFrame {
         txtInputNim.setText("");
         txtInputHobby.setText("");
         txtInputAlamat.setText("");
-        jCboxPilihAngkatan.getSelectedItem().toString();
-        jCboxPilihJurusan.getSelectedItem().toString();
-        jCBPilihGender.getSelectedItem().toString();
+        jCboxPilihAngkatan.setSelectedItem("-");
+        jCboxPilihJurusan.setSelectedItem("-");
+        jCBPilihGender.setSelectedItem("-");
         txtHasil.setText("");
     }//GEN-LAST:event_btnDeleteActionPerformed
 
