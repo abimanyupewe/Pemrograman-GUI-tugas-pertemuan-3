@@ -31,7 +31,7 @@ public class inputBioData extends javax.swing.JFrame {
         txtInputName = new javax.swing.JTextField();
         txtInputNim = new javax.swing.JTextField();
         txtInputHobby = new javax.swing.JTextField();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        jCboxPilihJurusan = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         txtHasil = new javax.swing.JTextArea();
         btnSubmit = new javax.swing.JButton();
@@ -58,8 +58,8 @@ public class inputBioData extends javax.swing.JFrame {
             }
         });
 
-        jComboBox1.setBackground(new java.awt.Color(204, 204, 204));
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Teknik Informatika", "Desain Komunikasi Visual", "Sistem Komputer", "Management", "Internasional Bisnis Manegemrnt" }));
+        jCboxPilihJurusan.setBackground(new java.awt.Color(204, 204, 204));
+        jCboxPilihJurusan.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "-", "Teknik Informatika", "Desain Komunikasi Visual", "Sistem Komputer", "Management", "Internasional Bisnis Manegemrnt" }));
 
         txtHasil.setColumns(20);
         txtHasil.setRows(5);
@@ -157,7 +157,7 @@ public class inputBioData extends javax.swing.JFrame {
                                     .addComponent(txtInputHobby)
                                     .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
                                     .addComponent(jCBPilihGender, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox1, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                                    .addComponent(jCboxPilihJurusan, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel8)
@@ -202,7 +202,7 @@ public class inputBioData extends javax.swing.JFrame {
                             .addComponent(jCboxPilihAngkatan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(16, 16, 16)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jCboxPilihJurusan, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel4))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -233,7 +233,7 @@ public class inputBioData extends javax.swing.JFrame {
         angkatan = jCboxPilihAngkatan.getSelectedItem().toString();
         hobby = txtInputHobby.getText();
         alamat = txtInputAlamat.getText();
-        piljus = jComboBox1.getSelectedItem().toString();
+        piljus = jCboxPilihJurusan.getSelectedItem().toString();
         gender = jCBPilihGender.getSelectedItem().toString();
 
         txtHasil.setText("Nama \t: " + name + "\nNim \t: " + nim + "\nAngkatan \t: Tahun " + angkatan + "\nJurusan \t: " + piljus + "\nJenis Kelamin \t: " + gender + "\nHobby \t: " + hobby + "\nAlamat \t: " + alamat);
@@ -245,7 +245,8 @@ public class inputBioData extends javax.swing.JFrame {
         txtInputNim.setText("");
         txtInputHobby.setText("");
         txtInputAlamat.setText("");
-        jComboBox1.getSelectedItem().toString();
+        jCboxPilihAngkatan.getSelectedItem().toString();
+        jCboxPilihJurusan.getSelectedItem().toString();
         jCBPilihGender.getSelectedItem().toString();
         txtHasil.setText("");
     }//GEN-LAST:event_btnDeleteActionPerformed
@@ -290,7 +291,7 @@ public class inputBioData extends javax.swing.JFrame {
     private javax.swing.JButton btnSubmit;
     private javax.swing.JComboBox<String> jCBPilihGender;
     private javax.swing.JComboBox<String> jCboxPilihAngkatan;
-    private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jCboxPilihJurusan;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
